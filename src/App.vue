@@ -1,9 +1,9 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div>
+    <router-view name="header" />
+    <router-view />
+    <router-view name="footer" />
   </div>
-  <router-view />
 </template>
 
 <style>
@@ -14,7 +14,9 @@
   text-align: center;
   color: #2c3e50;
 }
-
+body {
+  margin: 0 !important;
+}
 #nav {
   padding: 30px;
 }
